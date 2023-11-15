@@ -1,0 +1,148 @@
+<%- include('includes/head.ejs') %>
+		
+	</head>
+	
+	<body>
+		
+		<div class="container-fluid">
+			<!--Row1 Header-->
+<%- include('includes/navigation.ejs') %>
+
+			<!--Row 2-->
+			<div class="row pic">
+				<div class="col book">
+					<h1>Great Styles Don't happen by chance, it happens by Appointment</h1>
+					<button type="button" class="btn btn-primary">BOOK NOW</button>
+				</div>
+				<div class="col collage">
+					<img src="images/nailong.jpg" alt="picture of a nail" id="nailcol">
+					<img src="images/brush.jpg" alt="picture of makeup" id="makecol">
+					<img src="images/haircut.jpg" alt="picture of hair" id="haircol">
+				</div>
+			</div>
+
+
+			<!--Row 3-->
+			<div class="row brief">
+				<div class="col me">
+					<h1>Style Me Beauty Salon</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					<button type="button" class="btn btn-primary">More</button>
+				</div>
+			</div>
+
+
+			<!--Row 4-->
+			<div class=" row inspiration">
+				<div class="col word">Here are some of our proud jobs we think you can get insiration from for your next appointment.</div>
+				<div class="col">
+					<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+						  <div class="carousel-item active" data-bs-interval="2000">
+							<img src="images/knotl.jpeg" class="d-block1" alt="...">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/make1.jpeg" class="d-block" alt="..." id="make1">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/nail1.png" class="d-block1" alt="...">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/hair2.png" class="d-block" alt="..." id="hair2">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/make2.jpeg" class="d-block" alt="..." id="make2">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/nail2.jpeg" class="d-block" alt="..." id="nail2">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/hair3.jpeg" class="d-block1" alt="...">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/make3.jpeg" class="d-block" alt="..." id="make3">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/nail3.jpeg" class="d-block" alt="..." id="nail3">
+						  </div>
+						  <div class="carousel-item" data-bs-interval="2000">
+							<img src="images/beauty.jpg" class="d-block" alt="..." id="beauty">
+						  </div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button>
+					  </div>
+				</div>
+			</div>
+
+
+			<!--Row 5-->
+			<div class=" row mail">
+				<div class="col">
+					<h3>Join Our Mailing List</h3>
+					<p>And be the first to know about our promos and discounts</p>
+					<form class="row mt-4">
+						<div class="col-md-9">
+						  <label for="inputEmail4" class="form-label">Email*</label>
+						  <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your email address">
+						</div>
+						<div class="col-md-1">
+							<button type="submit" class="btn btn-primary">Join</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+			<!--Row 6-->
+			<div class=" row buttom">
+
+				<div class="col-md-2">
+					<h5>Opening Hours</h5><br>
+					<p>Mon-Fri: 8am-10pm</p>
+					<p>Sat: 7am-11pm</p>
+					<p>Sun: 12pm-8pm</p>
+
+				</div>
+
+				<div class="col-md-2">
+					<h5>Menu</h5><br>
+					<a class="buttom-link" href="#">About</a><br>
+					<a class="buttom-link" href="#">Services</a><br>
+					<a class="buttom-link" href="#">Book Appointment</a>
+
+				</div>
+				<div class="col-md-2 socials">
+					<h5>Socials</h5><br>
+					<a href="#"><i class="fa-brands fa-facebook"></i>Styleme</a><br>
+					<a href="#"><i class="fa-brands fa-instagram"></i>Styleme_101</a><br>
+					<a href="#"><i class="fa-brands fa-youtube"></i>Style me</a>
+
+
+				</div>
+				
+				<div class="col-md-2">
+					<h5>Location/Map</h5><br>
+					<p>12, Ayodele Ogunlolu Close, Journalist Phase1, Arepo, Ogun State.</p>
+					
+
+				</div>
+				<div class="col map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.569399859991!2d3.4268584146326893!3d6.700129595155968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103beb966dbf59c7%3A0x4b9140a16036d202!2sJournalists%20estate%20phase%20one!5e0!3m2!1sen!2sng!4v1668530793871!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+
+			<!--Row 7-->
+			<div class="row justify-content-between footer">
+				<div class="col">&copy;Proudly Developed By Bukkyshow</div>
+			</div>
+
+		</div>
+
+<%- include('includes/end.ejs') %>

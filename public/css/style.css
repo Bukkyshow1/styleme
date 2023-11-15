@@ -1,0 +1,202 @@
+div{
+    
+    border: 1px solid blue;
+}
+
+.header{
+    height: 50px;
+}
+
+.logo{
+    margin-top: 6px;
+    text-decoration: none;
+    
+    
+}
+#log{
+    text-decoration: none;
+    color:#EAF2E3;
+    font-size: 20px;
+}
+
+.pic{
+    height: 650px;
+    color:#053E61;
+}   
+
+.brief{
+    height: 450px;
+    color:#053E61;
+}
+
+.inspiration{
+    height: 250px;
+    background-color: #B8C4BB;
+    color:#053E61;
+}
+
+.mail{
+    height: 190px;
+    background-color: #F5F9F1;
+    color:#053E61;
+}
+
+.buttom{
+    height: 180px;
+    background-color: #053E61;
+    color:#EAF2E3
+}
+
+
+.footer{
+    height: 50px;
+    color:#053E61;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #F5F9F1;  
+}
+
+#last{
+    padding-top: 10px;
+}
+
+.collage img{
+    width: 17%;
+    margin-top: 120px;
+    margin-left: 50px;
+    position: absolute;    
+}
+
+#nailcol{
+    z-index: 1;
+    margin-left: 40px;
+    margin-top: 95px;
+}
+
+
+#makecol{
+    z-index: 3;
+    margin-left: 320px;
+    margin-top: 35px;
+
+}
+
+
+#haircol{
+    z-index: 2;
+    margin-left: 180px;
+    margin-top: 290px;
+
+}
+
+.book h1, .book p{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.me h1{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.me p{
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.9;
+    
+}
+
+.btn{
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+    
+    
+}
+
+.d-block1{
+    width: 195px;
+    
+}
+
+#make1{
+    width: 177px;
+}
+
+.carousel-inner{
+    margin-left: 150px;
+}
+
+.word{
+    text-align: center;
+    margin-top: 70px;
+}
+
+#hair2{
+    width: 240px;
+}
+
+#make2{
+    width: 162px;
+}
+#nail2{
+    width: 242px;
+}
+#make3{
+    width: 162px;
+}
+#nail3{
+    width: 242px;
+}
+#beauty{
+    width: 163px;
+}
+
+.nav{
+    margin-left: 30px;
+}
+
+.nav-link{
+    color: #EAF2E3;
+    
+}
+
+.nav a:hover {
+    background-color:#EAF2E3;
+    color:#02141f;
+    border: 2px solid #053812;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+
+.header{
+    color: #EAF2E3;
+    background-color: #053E61;
+}
+
+.cont{
+    margin-top: 8px;
+    color: #EAF2E3;
+
+}
+
+.cont a{
+    text-decoration: none;
+    color: #EAF2E3;
+    
+}
+
+.buttom a{
+    text-decoration: none;
+    color: #EAF2E3;
+    line-height: 2.0;
+}
+
+.map iframe{
+    height: 170px;
+    width: 370px;
+}
+

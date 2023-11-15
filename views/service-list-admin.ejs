@@ -1,0 +1,62 @@
+<%- include('includes/head.ejs') %>
+		
+	</head>
+	
+	<body>
+		
+		<div class="container-fluid">
+			<!--Row1 Header-->
+<%- include('includes/navigation.ejs') %>
+
+			<!--Row 2-->
+			<div>
+				<h2>Admin Products and Services </h2>
+				<% for (let newHair of addedHair) { %>
+					
+					
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Hair Style</th>
+								<th scope="col">Price</th>
+								<th scope="col">Edit</th>
+								<th scope="col">Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><%= newHair.hairType %></td>
+								<td><%= newHair.hairPrice %></td>
+								<td><button><a href="/admin/edit-product/<%= newHair.id%>" class="btn-secondary">Edit</a></button></td>
+								<td>
+									<form action="/admin/deletehair" method="POST">
+										<input type="hidden" name="hairId" value="<%= newHair.id %>">
+										<button type="button" class="btn-danger">Delete</button>
+									</form>
+								</td>
+				
+							</tr>
+						</tbody>
+					</table>
+
+					<!-- <form action="/admin/delete-product" method="POST">
+						<button type="submit" class="btn btn-primary">Delete</button>
+					</form>
+
+
+					<form action="/admin/edit-product" method="POST">
+						<button type="submit"><a href="/admin/edit-product/<%= newHair.id%>"></a>Edit</button>
+					</form> -->
+
+				<% } %>
+			</div>
+
+			
+			<!--Row 7-->
+			<div class="row justify-content-between footer">
+				<div class="col">&copy;Proudly Developed By Bukkyshow</div>
+			</div>
+
+		</div>
+
+<%- include('includes/end.ejs') %>
