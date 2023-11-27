@@ -9,38 +9,7 @@
 <%- include('includes/navigation.ejs') %>
 
 			<!--Row 2-->
-			<div>
-				<h2>Here are some of the hair services we render</h2>
-				<% for (let newHair of addedHair) { %>
-
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th scope="col">Hair Style</th>
-								<th scope="col">Price</th>
-								<th scope="col">Place Order</th>
-								<th scope="col">Delete From Cart</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><%= newHair.hairType %></td>
-								<td><%= newHair.hairPrice %></td>
-								<td><form action="#" method="POST">
-									<button type="submit" class="btn-primary">Order</button>
-									<input type="hidden" name="hairId" value="<%= newHair.id %>">
-								</form></td>
-								<td><button type="button" class="btn-danger">Delete</button></td>
-								<!-- <td><a href="/admin/edit-product/<%= newHair.id%>" class="btn btn-secondary">Edit</a></td>
-								<td><a href="#" class="btn btn-danger">Delete</a></td> -->
-								
-							</tr>
-						</tbody>
-					</table>
-
-					
-				<% } %>
-			</div>
+			
 			
 
 			<p>View your order <a href="/orders">here</a></p>

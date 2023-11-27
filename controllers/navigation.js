@@ -19,9 +19,15 @@ exports.getServices = (req, res) => {
 };
 
 exports.getServiceList = (req, res) => {
-    Product.fetchAll((products) => {
-        res.render('service-list', {addedHair: products, pageTitle: 'Hairstyles'});
-    });
+    try{
+        Product.fetchAll((products) => {
+            res.render('service-list', {addedHair: products, pageTitle: 'Hairstyles'});
+        });
+    }
+    catch(err){
+        console.log(err)
+    }
+       
     
 };
 
@@ -30,6 +36,7 @@ exports.getHair = (req, res) => {
     console.log(hairId);
     res.redirect('/')
 };
+
 
 exports.getOrders = (req, res) => {
     res.render('orders', { pageTitle: 'My order' });

@@ -19,6 +19,21 @@ class Product{
         
     };
 
+    static fetchAll() {
+        const db = getDb();
+        return db
+            .collection('Hair Info')
+            .find()
+            .toArray()
+            .then(hairservice => {
+                console.log (hairservice);
+                return hairservice;
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    };
+
       
 };
 module.exports = Product;

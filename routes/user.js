@@ -1,5 +1,3 @@
-const path = require('path');
-
 const express = require('express');
 
 const serviceController = require('../controllers/add-service');
@@ -17,13 +15,15 @@ router.get('/apt', navigationController.getApt);
 
 router.get('/services', navigationController.getServices);
 
+router.get('/service-list', navigationController.getServiceList);
+
 router.get('/orders', navigationController.getOrders);
 
 router.post('/orders', navigationController.postOrders);
 
 router.get('/checkout', navigationController.getCheckout);
 
-router.get('/service-list', navigationController.getServiceList);
+
 
 // router.get('/services', (req, res) => {
 //     const hair = adminData.hair;
